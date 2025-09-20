@@ -5,7 +5,7 @@ This site is structured for GitHub Pages hosting.
 ## Structure
 
 - `index.html` — Main site entry point (must be at root for GitHub Pages)
-- `assets/` — For static assets (e.g., Open Graph images, custom CSS/JS, etc.)
+- `assets/` — For static assets (e.g., Open Graph images, custom CSS/JS, etc.). Place production-only binaries (like the logo and hero background) here locally; they are ignored by Git so you can upload them directly in your hosting platform without committing.
 - `images/` — For gallery and portfolio images (upload your images here)
 
 ## How to use
