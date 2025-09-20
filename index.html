@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fastmove Carpenters | Kitchens, Cupboards, Doors & Decking — Pietermaritzburg</title>
+  <meta name="description" content="Registered local carpenters building kitchens, built-ins, doors, decks & shopfitting with fast turnaround in Pietermaritzburg & KZN. WhatsApp +27 79 048 5777." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B4513', // SaddleBrown
+            secondary: '#A0522D',
+            accent: '#FAF5EB',
+            highlight: '#2B1A10'
+          },
+          fontFamily: {
+            heading: ['\"Playfair Display\"', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          },
+          boxShadow: { card: '0 8px 24px rgba(0,0,0,0.10)' },
+          borderRadius: { xl2: '1rem' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}
+    .section-divider{position:relative;padding-bottom:.5rem;margin-bottom:1.25rem}
+    .section-divider::after{content:"";position:absolute;left:0;bottom:0;width:4rem;height:3px;background:linear-gradient(90deg,#8B4513,#A0522D)}
+    .hero-bg::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 20%,rgba(139,69,19,.14),transparent),linear-gradient(#FAF5EB,#FFFFFF 60%);z-index:-1}
+    .glass{backdrop-filter:saturate(1.4) blur(8px);background:rgba(255,255,255,0.70)}
+    .accordion[aria-expanded="true"] + .panel{max-height:320px}
+    .panel{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Fastmove Carpenters" />
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Fastmove Carpenters — Quality Carpentry. Fast Turnaround." />
+  <meta property="og:description" content="Kitchens, built-ins, doors, decking & repairs in Pietermaritzburg." />
+  <meta property="og:image" content="/assets/og-cover-carpenters.jpg" />
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fastmove Carpenters",
+    "url": "https://fastmovecarpenters.co.za",
+    "telephone": "+27-79-048-5777",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "19 Syndicate",
+      "addressLocality": "Pietermaritzburg",
+      "addressRegion": "KwaZulu-Natal",
+      "postalCode": "3201",
+      "addressCountry": "ZA"
+    },
+    "areaServed": "ZA-KZN",
+    "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00"
+  }
+  </script>
+</head>
+<body class="font-body text-slate-800 bg-accent">
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-secondary grid place-items-center text-white shadow">
+          <i class="fa-solid fa-hammer"></i>
+        </div>
+        <div class="leading-tight">
+          <div class="font-heading font-semibold tracking-tight text-highlight">FASTMOVE <span class="tracking-wide text-primary">CARPENTERS</span></div>
+          <div class="text-xs text-slate-500">Pietermaritzburg • KZN</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a class="nav-link text-sm hover:text-primary" href="#services">Services</a>
+        <a class="nav-link text-sm hover:text-primary" href="#portfolio">Portfolio</a>
+        <a class="nav-link text-sm hover:text-primary" href="#faqs">FAQs</a>
+        <a class="nav-link text-sm hover:text-primary" href="#about">About</a>
+        <a class="nav-link text-sm hover:text-primary" href="#contact">Contact</a>
+        <a class="inline-flex items-center gap-2 text-sm bg-primary text-white px-4 py-2 rounded-xl2 shadow hover:bg-secondary" href="https://wa.me/27790485777" target="_blank" rel="noopener">Get a Free Quote <i class="fa-brands fa-whatsapp text-base"></i></a>
+      </nav>
+      <button id="menuBtn" aria-label="Open menu" aria-controls="mnav" aria-expanded="false" class="md:hidden p-2 rounded hover:bg-slate-100">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+    <div id="mnav" class="md:hidden border-t border-slate-200 hidden">
+      <div class="px-4 py-3 grid gap-2 bg-white">
+        <a class="block py-2" href="#services">Services</a>
+        <a class="block py-2" href="#portfolio">Portfolio</a>
+        <a class="block py-2" href="#faqs">FAQs</a>
+        <a class="block py-2" href="#about">About</a>
+        <a class="block py-2" href="#contact">Contact</a>
+        <a class="inline-flex items-center justify-center gap-2 text-sm bg-primary text-white px-4 py-2 rounded-xl2 shadow" href="https://wa.me/27790485777" target="_blank" rel="noopener">WhatsApp Us<i class="fa-brands fa-whatsapp text-base"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="pt-28 pb-16 relative hero-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7">
+          <h1 class="font-heading text-4xl sm:text-5xl font-bold leading-tight text-highlight">Quality Carpentry. Fast Turnaround.</h1>
+          <p class="mt-4 text-xl text-slate-700 max-w-2xl">Kitchens, built-ins, doors, decks — made to measure in Pietermaritzburg.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://wa.me/27790485777" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-xl2 shadow hover:bg-secondary">
+              <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Us
+            </a>
+            <a href="#book" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl2 border border-primary text-primary hover:bg-primary/10">
+              <i class="fa-regular fa-calendar-check"></i> Get a Free Quote
+            </a>
+          </div>
+          <ul class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-600">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-id-card-clip text-primary"></i> Registered Company</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-primary"></i> Insured</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-helmet-safety text-primary"></i> Safety‑first</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="glass rounded-2xl p-6 shadow-card">
+            <h3 class="font-heading text-xl text-highlight">Quick Quote</h3>
+            <p class="text-sm text-slate-600">Prefer messaging? Use WhatsApp or send a request here.</p>
+            <form class="mt-4 grid gap-3" method="get" action="#">
+              <input class="px-3 py-2 rounded-lg border border-slate-300" name="name" placeholder="Full Name" />
+              <input class="px-3 py-2 rounded-lg border border-slate-300" name="phone" placeholder="Phone" />
+              <input class="px-3 py-2 rounded-lg border border-slate-300" name="address" placeholder="Site Address" />
+              <select class="px-3 py-2 rounded-lg border border-slate-300" name="service">
+                <option value="">Service Needed</option>
+                <option>Kitchens & Cabinetry</option>
+                <option>Built‑in Cupboards</option>
+                <option>Doors & Frames</option>
+                <option>Decking & Exterior Wood</option>
+                <option>Repairs & Refinishing</option>
+                <option>Shopfitting & Office</option>
+              </select>
+              <textarea class="px-3 py-2 rounded-lg border border-slate-300" rows="3" name="notes" placeholder="Project details (sizes, finishes, photos)"></textarea>
+              <button class="inline-flex items-center justify-center gap-2 bg-primary text-white px-4 py-2 rounded-xl2 hover:bg-secondary" type="submit">
+                <i class="fa-regular fa-paper-plane"></i> Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">Our Services</h2>
+      <p class="text-lg text-slate-700 max-w-3xl">Custom joinery with clean finishes and tidy sites. Built to measure, delivered fast.</p>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="service-card p-6 bg-accent rounded-2xl shadow-card">
+          <i class="fa-solid fa-kitchen-set text-primary text-2xl"></i>
+          <h3 class="mt-3 font-heading text-xl text-highlight">Kitchens & Cabinetry</h3>
+          <p class="text-slate-700 text-sm">Layouts, carcasses, doors, worktops, soft‑close hardware.</p>
+        </article>
+        <article class="service-card p-6 bg-accent rounded-2xl shadow-card">
+          <i class="fa-solid fa-wardrobe text-primary text-2xl"></i>
+          <h3 class="mt-3 font-heading text-xl text-highlight">Built‑in Cupboards</h3>
+          <p class="text-slate-700 text-sm">Wardrobes and storage to your exact dimensions.</p>
+        </article>
+        <article class="service-card p-6 bg-accent rounded-2xl shadow-card">
+          <i class="fa-solid fa-door-closed text-primary text-2xl"></i>
+          <h3 class="mt-3 font-heading text-xl text-highlight">Doors & Frames</h3>
+          <p class="text-slate-700 text-sm">Hanging, frame install/repair, locks & weather seals.</p>
+        </article>
+        <article class="service-card p-6 bg-accent rounded-2xl shadow-card">
+          <i class="fa-solid fa-tree text-primary text-2xl"></i>
+          <h3 class="mt-3 font-heading text-xl text-highlight">Decking & Exterior</h3>
+          <p class="text-slate-700 text-sm">Hardwood decks, pergolas, railings & maintenance.</p>
+        </article>
+        <article class="service-card p-6 bg-accent rounded-2xl shadow-card">
+          <i class="fa-solid fa-screwdriver-wrench text-primary text-2xl"></i>
+          <h3 class="mt-3 font-heading text-xl text-highlight">Repairs & Refinishing</h3>
+          <p class="text-slate-700 text-sm">Joinery repairs, sanding, varnish/oil & aftercare.</p>
+        </article>
+        <article class="service-card p-6 bg-accent rounded-2xl shadow-card">
+          <i class="fa-solid fa-store text-primary text-2xl"></i>
+          <h3 class="mt-3 font-heading text-xl text-highlight">Shopfitting & Office</h3>
+          <p class="text-slate-700 text-sm">Counters, shelving, displays with tidy cable management.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio (placeholder tiles) -->
+  <section id="portfolio" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">Portfolio Highlights</h2>
+      <p class="text-lg text-slate-700 max-w-3xl">Recent work around PMB. Replace these tiles with your before/after photos.</p>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="aspect-video rounded-2xl bg-slate-200 grid place-items-center text-slate-500">Kitchen — Before → After</div>
+        <div class="aspect-video rounded-2xl bg-slate-200 grid place-items-center text-slate-500">BIC — Before → After</div>
+        <div class="aspect-video rounded-2xl bg-slate-200 grid place-items-center text-slate-500">Door & Frame — Before → After</div>
+        <div class="aspect-video rounded-2xl bg-slate-200 grid place-items-center text-slate-500">Deck — Before → After</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">What Clients Say</h2>
+      <div class="mt-6 bg-white rounded-2xl shadow-card p-6">
+        <div id="tslide" class="text-slate-700">
+          <p class="text-lg">“Professional, tidy and quick. Our new cupboards are perfect.”</p>
+          <div class="mt-3 flex items-center gap-2"><span class="font-medium">A. Naidoo</span><span class="text-slate-500">• Hayfields</span><span class="text-yellow-500"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">Frequently Asked Questions</h2>
+      <div class="mt-6 divide-y divide-slate-200">
+        <button class="accordion w-full text-left py-4 font-medium" aria-expanded="false">Do you provide free quotes?</button>
+        <div class="panel"><p class="pb-4 text-slate-700">Yes. Site visits within PMB include a refundable call‑out fee credited if you proceed.</p></div>
+        <button class="accordion w-full text-left py-4 font-medium" aria-expanded="false">How fast can you start?</button>
+        <div class="panel"><p class="pb-4 text-slate-700">Small jobs can start within 48–72 hours; larger projects are scheduled 1–3 weeks out depending on materials.</p></div>
+        <button class="accordion w-full text-left py-4 font-medium" aria-expanded="false">Do you offer warranties?</button>
+        <div class="panel"><p class="pb-4 text-slate-700">12‑month workmanship warranty on installs; manufacturer warranties apply to hardware and boards.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">About Fastmove Carpenters</h2>
+      <p class="mt-4 text-lg text-slate-700">Fastmove Carpenters blends precision joinery with lean on‑site workflows to finish jobs faster without compromising quality. Values: <span class="font-medium">Craftsmanship</span>, <span class="font-medium">Speed</span>, <span class="font-medium">Transparency</span>, <span class="font-medium">Safety</span>, <span class="font-medium">Sustainability</span>.</p>
+      <div class="mt-6 p-5 bg-accent rounded-2xl shadow-card">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary grid place-items-center text-white">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div>
+            <div class="font-heading text-highlight">Joachim Ruzwe</div>
+            <div class="text-sm text-slate-600">Director</div>
+          </div>
+        </div>
+        <blockquote class="mt-3 text-slate-700 text-sm">“Built to last. Delivered on time.”</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book / Contact CTA -->
+  <section id="book" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">Get a Free Quote</h2>
+      <div class="mt-6 grid lg:grid-cols-2 gap-8">
+        <div class="space-y-3">
+          <p class="text-slate-700"><i class="fa-solid fa-phone text-primary"></i> <a class="underline hover:text-primary" href="tel:+27790485777">+27 79 048 5777</a></p>
+          <p class="text-slate-700"><i class="fa-brands fa-whatsapp text-primary"></i> <a class="underline hover:text-primary" href="https://wa.me/27790485777" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+          <p class="text-slate-700"><i class="fa-solid fa-envelope text-primary"></i> <a class="underline hover:text-primary" href="mailto:hello@fastmovecarpenters.co.za">hello@fastmovecarpenters.co.za</a></p>
+          <p class="text-slate-700"><i class="fa-solid fa-clock text-primary"></i> Mon–Fri 08:00–17:00 • Sat 08:00–13:00</p>
+        </div>
+        <div>
+          <div class="bg-white rounded-2xl p-6 shadow-card border border-slate-200">
+            <form class="grid gap-3" method="get" action="#">
+              <input class="px-3 py-2 rounded-lg border border-slate-300" id="full_name" name="full_name" placeholder="Full Name" />
+              <input class="px-3 py-2 rounded-lg border border-slate-300" id="phone" name="phone" placeholder="Phone" />
+              <input class="px-3 py-2 rounded-lg border border-slate-300" id="email" name="email" placeholder="Email" />
+              <input class="px-3 py-2 rounded-lg border border-slate-300" id="address" name="address" placeholder="Site Address" />
+              <select class="px-3 py-2 rounded-lg border border-slate-300" id="service" name="service">
+                <option value="">Select Service</option>
+                <option>Kitchens & Cabinetry</option>
+                <option>Built‑in Cupboards</option>
+                <option>Doors & Frames</option>
+                <option>Decking & Exterior Wood</option>
+                <option>Repairs & Refinishing</option>
+                <option>Shopfitting & Office</option>
+              </select>
+              <select class="px-3 py-2 rounded-lg border border-slate-300" id="timeline" name="timeline">
+                <option value="">Timeline</option>
+                <option>ASAP</option>
+                <option>1–2 weeks</option>
+                <option>3–4 weeks</option>
+                <option>Flexible</option>
+              </select>
+              <textarea class="px-3 py-2 rounded-lg border border-slate-300" id="details" name="details" rows="3" placeholder="Project details"></textarea>
+              <button class="inline-flex items-center justify-center gap-2 bg-primary text-white px-4 py-2 rounded-xl2 hover:bg-secondary" type="submit">
+                <i class="fa-regular fa-paper-plane"></i> Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Map -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-divider font-heading text-3xl text-highlight">Contact & Location</h2>
+      <div class="mt-6 grid lg:grid-cols-2 gap-8">
+        <div class="space-y-3">
+          <p class="text-slate-700"><i class="fa-solid fa-location-dot text-primary"></i> 19 Syndicate, Pietermaritzburg, 3201</p>
+          <p class="text-slate-700"><i class="fa-solid fa-phone text-primary"></i> <a class="underline hover:text-primary" href="tel:+27790485777">+27 79 048 5777</a></p>
+          <p class="text-slate-700"><i class="fa-solid fa-envelope text-primary"></i> <a class="underline hover:text-primary" href="mailto:hello@fastmovecarpenters.co.za">hello@fastmovecarpenters.co.za</a></p>
+          <div class="flex gap-3 pt-2">
+            <a href="https://wa.me/27790485777" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-xl2 hover:bg-secondary"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+            <a href="https://maps.google.com/maps?q=19%20Syndicate%2C%20Pietermaritzburg%2C%203201&output=embed" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl2 border border-primary text-primary hover:bg-primary/10"><i class="fa-solid fa-map"></i> Get Directions</a>
+          </div>
+        </div>
+        <div class="aspect-video rounded-2xl overflow-hidden shadow-card">
+          <iframe title="Map" class="w-full h-full" loading="lazy" src="https://maps.google.com/maps?q=19%20Syndicate%2C%20Pietermaritzburg%2C%203201&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="text-sm text-slate-600">© <span id="year"></span> Fastmove Carpenters. All rights reserved.</div>
+        <div class="text-sm text-slate-600">Reg No: 2024/791366/07 • Director: Joachim Ruzwe</div>
+        <div class="flex items-center gap-4 text-slate-600">
+          <a href="#services" class="hover:text-primary">Services</a>
+          <a href="#portfolio" class="hover:text-primary">Portfolio</a>
+          <a href="#faqs" class="hover:text-primary">FAQs</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/27790485777" target="_blank" rel="noopener" class="fixed bottom-4 right-4 inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary text-white shadow-lg hover:bg-secondary" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script>
+    // Mobile nav toggle
+    const btn = document.getElementById('menuBtn');
+    const mnav = document.getElementById('mnav');
+    if (btn) btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      mnav.classList.toggle('hidden');
+    });
+
+    // Accordion
+    document.querySelectorAll('.accordion').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        const panel = btn.nextElementSibling;
+        if (panel) {
+          panel.style.maxHeight = expanded ? '0' : panel.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
